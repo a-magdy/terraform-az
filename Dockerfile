@@ -1,4 +1,4 @@
-FROM docker.io/hashicorp/terraform:0.12.3
+FROM docker.io/hashicorp/terraform:0.12.6
 
 # https://github.com/Azure/azure-cli/issues/8863#issuecomment-477398239
 
