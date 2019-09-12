@@ -1,4 +1,4 @@
-FROM docker.io/hashicorp/terraform:0.12.6
+FROM docker.io/hashicorp/terraform:0.12.8
 
 # https://github.com/Azure/azure-cli/issues/8863#issuecomment-477398239
 
@@ -11,7 +11,7 @@ RUN apk add --virtual=build gcc libffi-dev musl-dev openssl-dev make python3-dev
 RUN pip3 install virtualenv &&\
     python3 -m virtualenv /azure-cli
 
-ARG AZURE_CLI_VERSION=2.0.70
+ARG AZURE_CLI_VERSION=2.0.73
 
 RUN /azure-cli/bin/python -m pip --no-cache-dir install azure-cli==${AZURE_CLI_VERSION}
 

@@ -1,1 +1,1 @@
-amagdy/terraform-az:0.12.6-2.0.70
+amagdy/terraform-az:0.12.8-2.0.73
